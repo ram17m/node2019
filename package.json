@@ -1,0 +1,26 @@
+{
+  "name": "node2019",
+  "version": "1.0.0",
+  "description": "Learning node by creating an express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ram17m/node2019.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "npm\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[",
+    "node",
+    "npm"
+  ],
+  "author": "Ram Babu Mishra",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ram17m/node2019/issues"
+  },
+  "homepage": "https://github.com/ram17m/node2019#readme"
+}
