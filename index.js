@@ -6,7 +6,7 @@ const connection = require('./model/db.js');
 const app = express();
 app.use(express.static('public'));
 
-app.get('/animal', async (req, res) => {
+app.get('/animals', async (req, res) => {
 
     try {
         const [results, fields] = await connection.query(
@@ -21,10 +21,27 @@ app.get('/animal', async (req, res) => {
     }
 
 });
+
+app.get('/animal' ,async(req, res) => {
+    console.log(req.query);
+   // res.send(`query params? ${req.query}`);
+   try {
+       const [results] = await connection.query(
+           'SELECT * FROM wild WHERE name LIKE ?',
+           [req.query.name]);
+        res.json(results);
+   } catch(e) {
+       res.send(`db error ${e}`);
+   }
+
+
+
+});
 app.get('/', (req, res) => {
     res.send('Hello from the my Node server');
 
 });
+
 app.get('/demo', (req, res) => {
     console.log('request', req);
     res.send('Demo');
