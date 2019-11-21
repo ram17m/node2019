@@ -4,7 +4,7 @@ const connection = require('./db');
 
 exports.getAll = async () => {
     try {
-        const [results, fields] = await connection.query('SELECT * FROM animal');
+        const [results, fields] = await connection.query('SELECT * FROM wild');
         console.log(results); // results contains rows returned by server
         console.log(fields); // fields contains extra meta data about results, if available
         return results;
